@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro de clientes - Atomus</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img class="logo" src="/img/logo.png" alt="logo">
+                <h1>Atomus Corp - Marketing</h1>
+            </div>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Cadastro de clientes</legend>
+                    <label for="empresa">
+                        Empresa: <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa"
+                            required autofocus />
+                    </label>
+                    <label for="CNPJ">
+                        CNPJ: <input type="text" id="cnpj" name="cnpj" placeholder="XX.XXX.XXX/0001-XX" required />
+                    </label>
+                    <label for="inicio_contrato">
+                        Início do contrato: <input type="date" id="inicio_contrato" name="inicio_contrato" required />
+                    </label>
+                    <label for="duracao_contrato">
+                        Duração do contrato: <input type="number" id="duracao_contrato" name="duracao_contrato"
+                            placeholder="Digite em meses" required /> meses
+                    </label>
+                    <label for="servicos_contratados">
+                        Serviços contratados:
+                        <input type="checkbox" id="trafego" name="trafego">
+                        <label for="trafego">Gestão de Trafego</label>
+                        <input type="checkbox" id="social_media" name="social_media">
+                        <label for="social_media">Social Media</label>
+                        <input type="checkbox" id="criacao_site" name="criacao_site">
+                        <label for="criacao_site">Criação de site</label>
+                    </label>
+                    <label for="veio_por">
+                        Veio por:
+                        <input type="radio" id="anuncio" name="veio_por" value="anuncio">
+                        <label for="feminino">Anúncio</label>
+                        <input type="radio" id="indicacao" name="veio_por" value="indicacao">
+                        <label for="masculino">Indicação</label>
+                        <input type="radio" id="nao_informado" name="veio_por" value="Nao_informado">
+                        <label for="nao_informado">Não informado</label>
+                    </label>
+                    <input type="submit" value="💾 Enviar" />
+                    <input type="reset" value="🚫 Limpar" />
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>CNPJ</th>
+                        <th>Início do contrato</th>
+                        <th>Duração do contrato</th>
+                        <th>Serviços Contratados</th>
+                        <th>Veio por</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>VOLKSWAGEN DO BRASIL INDUSTRIA DE VEICULOS AUTOMOTORES LTDA</td>
+                        <td>59.104.422/0001-50</td>
+                        <td>12/12/2022</td>
+                        <td>12</td>
+                        <td>Gestão de Trafego</td>
+                        <td>Anúncio</td>
+                        <td>
+                            <button>✏ Editar</button>
+                            <button class="apagar">🗑 Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>FORD MOTOR COMPANY BRASIL LTDA</td>
+                        <td>03.470.727/0001-20</td>
+                        <td>31/10/2022</td>
+                        <td>24</td>
+                        <td>Social Media</td>
+                        <td>Indicação</td>
+                        <td>
+                            <button>✏ Editar</button>
+                            <button class="apagar">🗑 Apagar</button>
+                        </td>
+                    <tr>
+                        <td>3</td>
+                        <td>ALL VEICULOS LTDA</td>
+                        <td>23.029.795/0001-66</td>
+                        <td>17/08/2022</td>
+                        <td>24</td>
+                        <td>Criação de Site</td>
+                        <td>Não informado</td>
+                        <td>
+                            <button>✏ Editar</button>
+                            <button class="apagar">🗑 Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>NISSAN DO BRASIL AUTOMOVEIS LTDA</td>
+                        <td>04.104.117/0001-76</td>
+                        <td>21/09/2022</td>
+                        <td>24</td>
+                        <td>Social Media</td>
+                        <td>Indicação</td>
+                        <td>
+                            <button>✏ Editar</button>
+                            <button class="apagar">🗑 Apagar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>FCA FIAT CHRYSLER AUTOMOVEIS BRASIL LTDA</td>
+                        <td>16.701.716/0001-56</td>
+                        <td>06/04/2022</td>
+                        <td>24</td>
+                        <td>Gestão de Trafego</td>
+                        <td>Não informado</td>
+                        <td>
+                            <button>✏ Editar</button>
+                            <button class="apagar">🗑 Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <h3>Atomus Corp 2023. Todos os direitos reservados.</h3>
+    </footer>
+
+</body>
+
+</html>

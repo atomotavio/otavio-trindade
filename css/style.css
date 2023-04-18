@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+section {
+    display: flex;
+}
+
+header {
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 10px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+li a:hover {
+    background-color: #444444;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #888;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label[for="trafego"],
+label[for="social_media"],
+label[for="criacao_site"] {
+    margin-right: 10px;
+}
+
+label[for="trafego"],
+label[for="social_media"],
+label[for="criacao_site"],
+label[for="feminino"],
+label[for="masculino"],
+label[for="nao_informado"],
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #af4c4c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #444444;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+thead {
+    background-color: #444444;
+    color: white;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #2624ad;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.apagar {
+    margin-top: 5px;
+    background-color: #af4c4c;
+}
+
+button:hover {
+    background-color: #357934;
+
+}
